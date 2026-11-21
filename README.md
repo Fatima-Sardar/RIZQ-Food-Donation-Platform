@@ -1,31 +1,72 @@
-# RIZQ - Core Java + MySQL
+# RIZQ – Food Donation Platform
+
+A Software Engineering project developed using Core Java and MySQL to facilitate food donation management.
+
+## Technologies Used
+- Core Java
+- MySQL Database
+- JDBC
+- MySQL Connector/J
+- PowerShell
+
+## Main Features
+- User Registration and Login
+- Donor Dashboard
+- Volunteer Dashboard
+- Welfare Organization Dashboard
+- Admin Dashboard
+- Donation Management
+- Donation Claiming and Requests
+- Feedback Management
+- Activity History
+- Input Validation
+
+## Data Structures
+The project demonstrates six custom data structures:
+1. Singly Linked List
+2. Doubly Linked List
+3. Circular Linked List
+4. Stack
+5. Queue
+6. Binary Search Tree
 
 ## Requirements
 - JDK 17 or later
 - MySQL Server
-- MySQL Connector/J JAR placed directly inside `lib/`
-- VS Code or another Java IDE
+- MySQL Workbench
+- Windows PowerShell
+- MySQL Connector/J (included in the lib folder)
 
-## Database
-Run `database/schema.sql` in MySQL Workbench.
+## Database Setup
+1. Start MySQL Server.
+2. Open MySQL Workbench.
+3. Execute the SQL database file provided in the database folder.
+4. Ensure the database name is `rizq_db`.
 
-## Configure database
-PowerShell (replace the password locally; do not share it):
+## How to Compile and Run
+
+Open PowerShell in the project folder and execute:
+
 ```powershell
-$env:RIZQ_DB_URL="jdbc:mysql://localhost:3306/rizq_db?serverTimezone=UTC"
-$env:RIZQ_DB_USER="root"
-$env:RIZQ_DB_PASSWORD="YOUR_PASSWORD"
-```
-
-## Compile and run
-```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\compile.ps1
 .\run.ps1
 ```
 
-This is an academic starter implementation. It demonstrates JDBC, role selection,
-shared Volunteer/Welfare Organization login, separate organization registration
-details, OOP inheritance/abstraction, and six custom data structures. Extend and
-test each workflow before final submission. For a real deployment, store salted
-password hashes rather than plain text; this starter's simple password field is
-for local demonstration only.
+The run script will prompt for your local MySQL password.
+
+The default database username in the run script is `root`. Change it if your MySQL username is different.
+
+## Project Structure
+- `src/` – Java source code
+- `database/` – SQL database file
+- `lib/` – Required JAR libraries
+- `docs/` – Project documentation
+- `compile.ps1` – Compilation script
+- `run.ps1` – Application execution script
+
+## Project Documentation
+The `docs` folder contains the project proposal, SRS, SDD, and software testing documentation.
+
+## Academic Project
+Developed as a Software Engineering project at Sukkur IBA University.
