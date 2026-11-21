@@ -35,7 +35,8 @@ The project demonstrates six custom data structures:
 - MySQL Server
 - MySQL Workbench
 - Windows PowerShell
-- MySQL Connector/J (included in the lib folder)
+- MySQL Connector/J: mysql-connector-j-9.7.0.jar (included in lib/ folder)
+
 
 ## Database Setup
 1. Start MySQL Server.
